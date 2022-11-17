@@ -1,0 +1,193 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>
+        page1 popup
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="page1.css">
+</head>
+
+<body>
+
+    <nav class="nav1">
+        <ul class="ul1">
+            <li><a href="#">Why GNIOT</a></li>
+            <li><a href="#"><i class="fa fa-grip-lines-vertical"></i>Alumni</a></li>
+            <li><a href="#"><i class="fas fa-grip-lines-vertical"></i>E-Brochure</a></li>
+            <li><a href="#"><i class="fas fa-grip-lines-vertical"></i>Contact Us</a></li>
+            <li><a href="#"><i class="fas fa-grip-lines-vertical"></i>Circulars</a></li>
+            <li><a href="#"><i class="fas fa-grip-lines-vertical"></i>Media</a></li>
+            <li><a href="#"><i class="fas fa-grip-lines-vertical"></i>ERP LOGIN</a></li>
+            <li><a href="#"><i class="fas fa-grip-lines-vertical"></i>Career</a></li>
+            <li><a href="#"><i class="fas fa-grip-lines-vertical"></i>Blog</a></li>
+            <li><a href="#"><i class="fas fa-grip-lines-vertical"></i>NIRF</a></li>
+            <li><a href="#"><i class="fas fa-grip-lines-vertical"></i>Smart India Hackathon2020</a></li>
+            <li><a href="#"><i class="fas fa-grip-lines-vertical"></i>GIISP-2021</a></li>
+            <li><a href="#"><i class="fa fa-phone"></i>Toll Free no: 18002746969</a></li>
+        </ul>
+        <button type="button" class="apply-now">APPLY NOW</button>
+    </nav>
+
+    <nav class="nav2">
+        <div class="mav2-logo"><img class="img" src="logo-gniot.jpg"></div>
+        <div class="mav2-list">
+            <ul class="ul2">
+
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a>
+                    <div class="aboutus-menu">
+                        <ul>
+                            <li><a href="#">HISTORY</a></li>
+                            <li><a href="#">MISSION & VISION</a></li>
+                            <li><a href="#">BLESSING OF FOUNDER</a></li>
+                            <li><a href="#">CHAIRMEN MESSAGE</a></li>
+                            <li><a href="#">VICE CHAIRMEN MESSAGE</a></li>
+                            <li><a href="#">DG MESSAGE</a></li>
+                            <li><a href="#">ADVISORY BODY</a></li>
+                            <li><a href="#">GOVERNING BODY</a></li>
+                            <li><a href="#">DIRECTOR MESSAGE</a></li>
+                            <li><a href="#">APPROVAL LETTER</a></li>
+                            <li><a href="#">MANDATORY DISCLOSURE</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">ACADEMICS</a></li>
+                <li><a href="#">PROGRAM</a></li>
+                <li><a href="#">DEPARTMENTS</a></li>
+                <li><a href="#">R&D</a></li>
+                <li><a href="#">CAMPUS</a></li>
+                <li><a href="#">ADMISSION</a></li>
+                <li><a href="#">TRAINING & PLACEMENT</a></li>
+                <li><a href="#">LIFE@GNIOT</a></li>
+                <li><a href="#">ONLINE FEE</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="login-popup" style="display:none">
+        <div class="container"></div>
+
+        <div class="box">
+            <div class="top-area">
+                <h2>ADMISSION ENQUIRY</h2>
+                <div class="close-btn">&times;</div>
+            </div>
+            <div class="form">
+                <h1>ENQUIRE NOW</h1>
+                <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+                    <div class="form-group">
+                        <input type="text" placeholder="Enter Name *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="User@gmail.com *" class="textfield" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="datetime-local" placeholder="day / month / year*" class="textfield" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="+91 123-45-67*" class="textfield" required>
+                    </div>
+                    <div class="form-group-flex">
+                        <input list="indianstate" placeholder="select State" required class="list">
+                        <datalist id="indianstate">
+                            <option value="Andhra Pradesh" >
+                            <option value="Arunachal Pradesh" >
+                            <option value="Assam">
+                            <option value="Bihar">
+                            <option value="Chhattisgarh">
+                            <option value="Goa">
+                            <option value="Gujarat">
+                            <option value="Haryana">
+                            <option value="Himachal Pradesh">
+                            <option value="Jharkhand">
+                            <option value="Karnataka">
+                            <option value="Kerala">
+                            <option value="Madhya Pradesh">
+                            <option value="Maharashtra">
+                            <option value="Manipur">
+                            <option value="Meghalaya">
+                            <option value="Mizoram">
+                            <option value="Nagaland">
+                            <option value="Odisha">
+                            <option value="Punjab">
+                            <option value="Rajasthan">
+                            <option value="Sikkim">
+                            <option value="Tamil Nadu">
+                            <option value="Telangana">
+                            <option value="Tripura">
+                            <option value="Uttar Pradesh">
+                            <option value="Uttarakhand">
+                            <option value="West Bengal">
+                        </datalist>
+                        <input list="city" placeholder="Select City *" required class="list">
+                        <datalist id="city">
+                            <option value="Banda">
+                            <option value="Mahoba">
+                            <option value="Kanpur">
+                            <option value="Lucknow">
+                            <option value="Delhi">
+                            <option value="Agra">
+                            <option value="Jhansi">
+                            <option value="Allhabad">
+                            
+                        </datalist>
+                    </div>
+                    <div class="form-group">
+                        <input list="course" placeholder="Course" class="textfield">
+                        <datalist id="course">
+                            <option value="Btech">
+                            <option value="BCA">
+                            <option value="Mtech">
+                            <option value="farmacy">
+                            <option value="BBA">
+                            <option value="MBBS">
+                            <option value="MBA">
+                            <option value="Agriculture">
+                            <option value="Fashion Desgining">
+                            <option value="LLB">
+                        </datalist>
+                    </div>
+                    <div class="form-group-flex">
+                        <input type="text" placeholder="Enter text as shown" required>
+                        <input type="text" placeholder="b23" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label><input type="checkbox" required class="check"> i agree to receive information regarding my enquery</label>
+                    </div>
+                    <div class="form-group">
+                        <button class="button" input type="submit" value="SUBMIT" onclick="submit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-area"></div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            setTimeout(function() {
+                $('.login-popup').css('display', 'block');
+            }, 5000);
+        });
+        $('.close-btn').click(function() {
+            $('.login-popup').css('display', 'none');
+        });
+        $('.container').click(function() {
+            $('.login-popup').css('display', 'none');
+        });
+        $('.submit').click(function() {
+            $('.login-popup').css('display', 'none');
+        });
+    </script>
+</body>
+
+</html>
